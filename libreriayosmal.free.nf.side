@@ -1,0 +1,212 @@
+{
+  "id": "d10e12e9-af7c-475a-b060-350f77522345",
+  "version": "2.0",
+  "name": "http://libreriayosmal.free.nf/index.php",
+  "url": "http://libreriayosmal.free.nf",
+  "tests": [{
+    "id": "86216e85-6bc9-4927-bee8-907184a26ae2",
+    "name": "Libros",
+    "commands": [{
+      "id": "94d96c19-0d20-40fb-97ca-c90a338432bd",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "075fddff-f89c-48bc-a4f0-57e8f555a847",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "647x656",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ceaf955c-4fea-44f2-ae7c-c124a2d19f2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Libros",
+      "targets": [
+        ["linkText=Libros", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Libros')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'libros.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Libros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b84aea9-e4b2-427b-841f-d050d1bf9765",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Listado de Libros')]", "xpath:innerText"]
+      ],
+      "value": "Listado de Libros"
+    }]
+  }, {
+    "id": "0ffd20b7-8a31-4e08-9135-3d2b77ed3829",
+    "name": "Autores",
+    "commands": [{
+      "id": "8eefe01f-c4c2-4871-98a8-2016b0a9ae0d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43ec5f9e-302a-4219-9579-ab195279fbf4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "647x656",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c14b1c4c-2765-463f-ba9d-b9fb434b5d0c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Autores",
+      "targets": [
+        ["linkText=Autores", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Autores')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'autores.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Autores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c41a913d-ee40-48f4-ac2a-0f8651ed0c37",
+    "name": "Contactar",
+    "commands": [{
+      "id": "cec28da0-9fa5-4654-bebb-a77cd91dda48",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e24ff10-50a5-40e6-bd0c-15576488bc93",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "647x656",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b46d9bf-4b53-4945-a33f-002d426fd382",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contacto",
+      "targets": [
+        ["linkText=Contacto", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contacto')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'contacto.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contacto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8112711c-be16-4913-b0d9-e945e5bd308b",
+      "comment": "",
+      "command": "click",
+      "target": "id=nombre",
+      "targets": [
+        ["id=nombre", "id"],
+        ["name=nombre", "name"],
+        ["css=#nombre", "css:finder"],
+        ["xpath=//input[@id='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca477228-76c9-4246-9d72-a32b307c4720",
+      "comment": "",
+      "command": "type",
+      "target": "id=nombre",
+      "targets": [
+        ["id=nombre", "id"],
+        ["name=nombre", "name"],
+        ["css=#nombre", "css:finder"],
+        ["xpath=//input[@id='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Yosmal"
+    }, {
+      "id": "c77426da-0837-402a-a9f5-2350fb41455b",
+      "comment": "",
+      "command": "type",
+      "target": "id=correo",
+      "targets": [
+        ["id=correo", "id"],
+        ["name=correo", "name"],
+        ["css=#correo", "css:finder"],
+        ["xpath=//input[@id='correo']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "yosmalz2@gmail.com"
+    }, {
+      "id": "7f0cf387-a817-47bc-9f3c-207d85123b11",
+      "comment": "",
+      "command": "type",
+      "target": "id=asunto",
+      "targets": [
+        ["id=asunto", "id"],
+        ["name=asunto", "name"],
+        ["css=#asunto", "css:finder"],
+        ["xpath=//input[@id='asunto']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Pedir Libro"
+    }, {
+      "id": "bdfe8877-64ff-4e51-9817-2444e30888bb",
+      "comment": "",
+      "command": "type",
+      "target": "id=comentario",
+      "targets": [
+        ["id=comentario", "id"],
+        ["name=comentario", "name"],
+        ["css=#comentario", "css:finder"],
+        ["xpath=//textarea[@id='comentario']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Libro de cuentos de Juan Bosch"
+    }, {
+      "id": "36bac5f3-4c35-4e4f-9c70-9574f68fca9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b482069-83bc-4227-bd38-21e20678a9e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.')]", "xpath:innerText"]
+      ],
+      "value": "Gracias por tu mensaje. Nos pondremos en contacto contigo pronto."
+    }]
+  }],
+  "suites": [{
+    "id": "8f25d411-0fbf-40c8-9f1e-a04210f73695",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["86216e85-6bc9-4927-bee8-907184a26ae2"]
+  }],
+  "urls": ["http://libreriayosmal.free.nf/"],
+  "plugins": []
+}
